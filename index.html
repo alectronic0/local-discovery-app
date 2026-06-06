@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalHerts - Local Discovery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="filter-panel">
+        <input
+            type="text"
+            id="postcode-search"
+            placeholder="Enter postcode (e.g., AL10 0LA)"
+            class="postcode-input"
+        >
+        <div id="filter-buttons" class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="community_hall">Community Halls</button>
+            <button class="filter-btn" data-filter="leisure">Leisure</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="transport">Transport</button>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- API key is added locally, not committed to repo -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh1Azmvcm4Yq2l6ylQMCvjjXJdK1O2WFU&libraries=geometry,places"></script>
+    <script src="app.js"></script>
+</body>
+</html>
