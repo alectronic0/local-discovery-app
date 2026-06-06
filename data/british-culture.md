@@ -482,18 +482,49 @@ Organized by category, compact table format with emoji for easy scanning. Includ
 
 ### Allied Relationships 🤝
 
+#### Enduring/Ancient Allies
+
 | Ally | 📅 Since | 🎖️ Nature of Alliance | 💬 Notes |
 |------|---------|----------------------|---------|
-| 🇵🇹 Portugal | 1373 | Oldest alliance in Europe; Treaty of Windsor | Enduring partnership; trade & defense |
-| 🇺🇸 USA | 1776+ | "Special Relationship"; WWII onwards | Military, economic, cultural ties; NATO allies |
-| 🇦🇺 Australia | 1901+ | Commonwealth; ANZUS alliance | Former dominion; Pacific security partner |
-| 🇳🇿 New Zealand | 1907+ | Commonwealth; ANZUS alliance | Commonwealth ties; Pacific region |
-| 🇨🇦 Canada | 1867+ | Commonwealth; NATO ally | Shared language, culture, institutions |
-| 🇵🇱 Poland | Medieval+ | Ancient European nation; long diplomatic ties; NATO ally | Medieval kingdom (10th c.+); trade & diplomatic relations for centuries; WWII partnership (Polish pilots in RAF, government-in-exile in London); post-Cold War NATO/EU ally |
-| 🇺🇦 Ukraine | 1991+ | NATO aspirant; European ties; modern support | Post-Soviet independence; 2022 invasion: strong UK support (weapons, sanctions, refugees) |
-| 🇳🇦 NATO Allies | 1949+ | Military alliance | Collective defense; European security |
+| 🇵🇹 Portugal | 1373 | Oldest alliance in Europe; Treaty of Windsor | Enduring partnership across 650+ years; trade & defense |
+| 🇵🇱 Poland | Medieval+ | Ancient European nation; long diplomatic ties; NATO ally | Medieval kingdom (10th c.+); centuries of relations; WWII partnership (Polish pilots in RAF, government-in-exile in London); post-Cold War NATO/EU ally |
 
-**Commonwealth** 🌐: Former British colonies/dominions; still maintain ties through Commonwealth of Nations; includes 56 nations; cultural & political network; legacy of imperialism + continued cooperation.
+#### Commonwealth Nations 🌐
+
+| Ally | 📅 Since | 🎖️ Nature of Alliance | 💬 Notes |
+|------|---------|----------------------|---------|
+| 🇨🇦 Canada | 1867+ | Commonwealth; NATO ally; shared institutions | Shared language, culture, legal systems; North American security |
+| 🇦🇺 Australia | 1901+ | Commonwealth; ANZUS alliance | Former dominion; Pacific security partner; "Five Eyes" intelligence ally |
+| 🇳🇿 New Zealand | 1907+ | Commonwealth; ANZUS alliance | Commonwealth ties; Pacific region; "Five Eyes" intelligence ally |
+
+#### Modern Core Allies
+
+| Ally | 📅 Since | 🎖️ Nature of Alliance | 💬 Notes |
+|------|---------|----------------------|---------|
+| 🇺🇸 USA | 1776+ | "Special Relationship"; WWII onwards | Military, economic, cultural ties; NATO allies; "Five Eyes" intelligence partnership; closest modern ally |
+| 🇪🇺 EU Nations | 1973+ (now post-Brexit) | Economic, defense, cultural cooperation | France, Germany, Spain, Italy, Netherlands; NATO allies; complex post-Brexit relationship |
+| 🇺🇦 Ukraine | 1991+ | NATO aspirant; European ties; modern support | Post-Soviet independence; 2022 invasion: strong UK support (weapons, sanctions, refugees) |
+
+#### Historical Allies (Changed/Evolved)
+
+| Former/Changed Ally | 📅 Relationship | 🎖️ History | 💬 Current Status |
+|-------------------|-----------------|----------|------------------|
+| 🇯🇵 Japan | 1902-1923 alliance; 1941-1945 enemies | Anglo-Japanese Alliance (naval agreement); WWII enemies; post-war partners | Modern allies; trade, defense, cultural ties; historical reconciliation |
+| 🇩🇪 Germany | Pre-WWI dynastic ties; 1914-1918 & 1939-1945 enemies | Queen Victoria's descendants ruled multiple nations; two world wars; now EU/NATO ally | Modern close allies; EU/NATO; economic partnership; historical reconciliation |
+| 🇮🇹 Italy | Pre-WWII diplomatic ties; 1940-1945 enemies | Mediterranean trade partner; WWII enemies; post-war partners | Modern allies; EU/NATO; economic, cultural ties |
+| 🇳🇱 Netherlands | 1600s-1700s rivals & partners; complex history | Dutch Wars (naval rivalry); trade competition; also maritime allies; shared Protestant heritage | Modern EU/NATO ally; economic partners |
+| 🇧🇪 Belgium | Shared WWII experience; NATO ally | German invasion of Belgium (both WWI & WWII) unified British-Belgian defense | Modern EU/NATO ally; close ties; shared experience of occupation |
+
+#### NATO & Collective Defense
+
+| Alliance | 📅 Since | 🎖️ Nature | 💬 Notes |
+|----------|---------|----------|---------|
+| 🇳🇦 NATO | 1949+ | Military alliance | Collective defense (Article 5); European security backbone; 30+ member states |
+| 👁️ "Five Eyes" | 1946+ | Intelligence alliance | UK, USA, Canada, Australia, New Zealand; signals intelligence sharing; deepest cooperation |
+
+**Commonwealth of Nations** 🌐: 56 member nations (former colonies/dominions); cultural, political, economic network; legacy of imperialism + continued cooperation; shared institutions, languages, legal systems.
+
+**Key Pattern**: Britain's strongest relationships often evolved from conflict (Japan, Germany, Italy became allies post-WWII) or trade/proximity (Portugal, Poland ancient ties). Modern alliances center on NATO, Commonwealth, and "Five Eyes" intelligence partnership.
 
 ---
 
