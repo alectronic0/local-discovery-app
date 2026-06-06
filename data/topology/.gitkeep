@@ -1,0 +1,3 @@
+# This folder holds topology/boundary data
+# Currently fetching boundaries live from ONS ArcGIS API
+# Future: can store pre-built GeoJSON here if needed for offline use

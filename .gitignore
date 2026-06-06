@@ -1,0 +1,12 @@
+# Keep API keys out of version control
+index.html
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.env
+.env.local
