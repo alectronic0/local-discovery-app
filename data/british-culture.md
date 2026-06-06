@@ -489,7 +489,7 @@ Organized by category, compact table format with emoji for easy scanning. Includ
 | 🇦🇺 Australia | 1901+ | Commonwealth; ANZUS alliance | Former dominion; Pacific security partner |
 | 🇳🇿 New Zealand | 1907+ | Commonwealth; ANZUS alliance | Commonwealth ties; Pacific region |
 | 🇨🇦 Canada | 1867+ | Commonwealth; NATO ally | Shared language, culture, institutions |
-| 🇵🇱 Poland | 1945+ | NATO ally; European security; WWII history | Shared WWII history (Polish pilots in RAF); EU partner; Eastern European security |
+| 🇵🇱 Poland | Medieval+ | Ancient European nation; long diplomatic ties; NATO ally | Medieval kingdom (10th c.+); trade & diplomatic relations for centuries; WWII partnership (Polish pilots in RAF, government-in-exile in London); post-Cold War NATO/EU ally |
 | 🇺🇦 Ukraine | 1991+ | NATO aspirant; European ties; modern support | Post-Soviet independence; 2022 invasion: strong UK support (weapons, sanctions, refugees) |
 | 🇳🇦 NATO Allies | 1949+ | Military alliance | Collective defense; European security |
 
