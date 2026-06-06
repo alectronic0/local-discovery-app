@@ -71,10 +71,49 @@ function attachTreeToggleHandlers() {
     });
 }
 
+function expandAll() {
+    document.querySelectorAll('.tree-content.children').forEach(content => {
+        content.classList.add('open');
+        const header = content.previousElementSibling;
+        if (header) {
+            const toggle = header.querySelector('.tree-toggle');
+            if (toggle) {
+                toggle.textContent = '▼';
+            }
+        }
+    });
+}
+
+function collapseAll() {
+    document.querySelectorAll('.tree-content.children').forEach(content => {
+        content.classList.remove('open');
+        const header = content.previousElementSibling;
+        if (header) {
+            const toggle = header.querySelector('.tree-toggle');
+            if (toggle) {
+                toggle.textContent = '▶';
+            }
+        }
+    });
+}
+
+function attachControlHandlers() {
+    const expandBtn = document.getElementById('expand-all-btn');
+    const collapseBtn = document.getElementById('collapse-all-btn');
+
+    if (expandBtn) {
+        expandBtn.addEventListener('click', expandAll);
+    }
+    if (collapseBtn) {
+        collapseBtn.addEventListener('click', collapseAll);
+    }
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('structureTree');
     if (container && typeof areaStructure !== 'undefined') {
         renderStructureTree(container, areaStructure);
+        attachControlHandlers();
     }
 });
