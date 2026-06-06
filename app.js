@@ -171,10 +171,10 @@ async function loadVenues() {
  */
 function getMarkerIcon(type) {
     const icons = {
-        community_hall: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        leisure: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
-        nature: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-        transport: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+        community_hall: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        leisure: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+        nature: 'https://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+        transport: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png'
     };
     return icons[type] || icons.community_hall;
 }
@@ -268,8 +268,15 @@ function setupPostcodeSearch() {
  * Uses postcodes.io API (free, no key required)
  */
 async function searchByPostcode(postcode) {
+    // Validate postcode format (UK postcode pattern)
+    const postcodeRegex = /^[a-z]{1,2}[0-9]{1,2}[a-z]?\s?[0-9][a-z]{2}$/i;
+    if (!postcodeRegex.test(postcode)) {
+        alert('Invalid UK postcode format (e.g., AL10 0LA)');
+        return;
+    }
+
     try {
-        const response = await fetch(`https://api.postcodes.io/postcodes/${postcode}`);
+        const response = await fetch(`https://api.postcodes.io/postcodes/${encodeURIComponent(postcode)}`);
         const data = await response.json();
 
         if (!data.result) {
