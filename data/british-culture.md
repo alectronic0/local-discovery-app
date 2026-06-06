@@ -113,6 +113,68 @@ Organized by category, compact table format with emoji for easy scanning. Includ
 | 🍪 Malted Milk | Malt flavor |
 | 🍪 Digestive Chocolate | Dark or milk chocolate-covered |
 
+### 🌾 Agricultural Regions & Crops
+
+| Region | 🌾 Crops | 📝 Significance |
+|--------|---------|-----------------|
+| 🌽 East Anglia (Norfolk, Suffolk, Cambridgeshire) | Wheat, barley, sugar beet, potatoes | Breadbasket of Britain; industrial agriculture; grain exports |
+| 🍎 Kent | Apples, cherries, hops | "Garden of England"; apple orchards; brewing tradition |
+| 🍐 Hereford & Worcestershire | Apples, pears, cider | Cider heartland; perry (pear cider) tradition; orchards |
+| 🥔 Cornwall & Devon | Potatoes, vegetables, crops | Southwest farming; moorland agriculture |
+| 🌾 Yorkshire | Wheat, barley, livestock | Northern grain belt; mixed farming |
+| 🥛 Cotswolds | Sheep, cattle, dairy | Pastoral farming; cheese production |
+| 🌾 East Midlands | Wheat, oats, legumes | Grain production; industrial Midlands support |
+
+### 🍎 Apples & Pears
+
+| Fruit | 🌍 Region | 🎖️ Significance |
+|-------|----------|-----------------|
+| 🍎 British Apples | Kent, Hereford, Worcester, Devon | Traditional orchards; heritage varieties (Russet, Cox, Bramley) |
+| 🍎 Cox's Orange Pippin | Kent origin | Sweet-tart balance; most popular British apple |
+| 🍎 Bramley | Nottinghamshire origin | Cooking apple; tart; used in desserts, pies, sauces |
+| 🍐 British Pears | Hereford, Worcestershire | Perry (pear cider) production; dessert pears |
+| 🍷 Perry (Pear Cider) | Southwest (Hereford, Gloucestershire) | Traditional fermented pear drink; heritage beverage; regional speciality |
+
+### 🍎 Cider (Regional Drink) 🍷
+
+| Cider Type | 🌍 Region | 📝 Details | 🎖️ Significance |
+|-----------|----------|-----------|-----------------|
+| 🍎 Traditional Cider | Southwest England (Hereford, Gloucestershire, Somerset, Devon) | Fermented apple juice; dry to medium sweetness; local production | Regional pride; farmhouse cider culture; heritage drink |
+| 🍎 Perry (Pear Cider) | Hereford, Worcestershire | Fermented pear juice; subtler flavor; rarer than cider | Heritage beverage; small-scale production; connoisseur drink |
+| 🏭 Commercial Cider | UK-wide | Brands (Strongbow, Bulmers, Thatchers) | Modern consumption; popular summer drink; youth culture |
+| 🍎 Dry Scrumpy | Somerset, Devon | Rough, unpasteurized farmhouse cider; high alcohol; local recipe | Traditional scrumpy culture; village tradition; unpredictable strength |
+| 🎋 Cider Festival | Annual (multiple locations) | Cider competitions, tastings, celebrations | Cultural heritage celebration; communities showcase local producers |
+
+**Cider Heritage**: Cider-making dates to medieval period (13th+ centuries); traditional farmers' drink; regional speciality in West Country (Hereford, Somerset, Devon, Gloucestershire, Worcestershire); revival of interest in craft/artisanal cider.
+
+### 🏅 EU-Protected Products (PDO/PGI) 🇪🇺
+
+**PDO (Protected Designation of Origin)** = Made, processed, prepared in specific region using traditional method
+**PGI (Protected Geographical Indication)** = At least one step of production in specific region; reputation/qualities linked to location
+
+| Product | 🏅 Status | 🌍 Region | 📝 Protection |
+|---------|----------|----------|--------------|
+| 🧀 West Country Farmhouse Cheddar | PGI | Devon, Dorset, Somerset, Cornwall | Traditional cheese-making; specific region; raw milk variants |
+| 🧀 Stilton Cheese | PGI | Leicestershire, Nottinghamshire, Derbyshire | Blue cheese; specific region; PDO/PGI protected recipe & location |
+| 🥟 Cornish Pasty | PGI | Cornwall | Traditional recipe, shape, ingredients; protected food name |
+| 🍒 Kentish Cherries | PGI | Kent | Region-specific; harvest season; quality standard |
+| 🥧 Melton Mowbray Pork Pie | PGI | Melton Mowbray, Leicestershire | Traditional shape, ingredients, pork sourcing; protected name |
+| 🧈 Welsh Butter | PGI | Wales | Regional production; traditional method |
+| 🥬 Jersey Royal Potatoes | PGI | Jersey (Channel Islands) | Early potatoes; specific terroir; harvest timing |
+| 🍺 Newcastle Brown Ale | Not PDO/PGI but regionally iconic | Newcastle, Tyne & Wear | Iconic brand; regional identity |
+| 🥃 Arbroath Smokie | PGI | Arbroath, Scotland | Smoked haddock; traditional smoking method; specific region |
+
+**Significance**: These products have **legal protection** from EU/UK law; name cannot be used by non-region producers; ensures authenticity, quality, traditional methods; brand protection for regional producers.
+
+### 🌾 Wheat & Grain Products
+
+| Product | 🌾 Source | 📝 Details |
+|---------|----------|-----------|
+| 🥖 British Bread | East Anglia, Yorkshire | Wholemeal, white, brown bread; traditional loaf shapes |
+| 🍺 Ale & Beer | Barley (various regions) | Traditional brewing; real ale culture; local breweries |
+| 🥣 Porridge/Oats | Scotland (historically); now nationwide | Scottish oat tradition; breakfast staple |
+| 🍞 Malted Barley | East Anglia, Midlands | Brewing ingredient; malt whisky base (Scotland) |
+
 ---
 
 ## 🎬 Movies & Media
