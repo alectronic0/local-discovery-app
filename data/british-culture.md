@@ -53,6 +53,72 @@ A celebration (and honest reckoning) of Britain's contributions to culture, inno
 
 - **Boxty** — Potato pancake/bread hybrid; How Made: Grated potato, mashed potato, flour in griddle pancake; Significance: Northern Irish specialty, often served with filling
 
+### Sandwiches (British Invention)
+
+- **The Sandwich Origin** — Named after John Montagu, 4th Earl of Sandwich (1718-1792)
+  - Story: Card player, didn't want to leave gaming table, ordered meat between bread
+  - Impact: Simple format, massive cultural adoption, became universal food
+  - Significance: British nobility invented convenient meal format
+  - Global: Sandwich shops, lunch culture, universal concept
+
+- **Fish Paste Sandwiches** — British classic, spread on white bread, traditional tea sandwich
+
+- **Cucumber Sandwiches** — Thin sliced, white bread, crusts removed, afternoon tea staple
+  - Significance: Quintessentially British, posh association, light lunch
+
+- **Potted Shrimp Sandwiches** — Shrimp paste spread, regional specialty (Lancashire)
+
+- **Gentleman's Relish Sandwiches** — Anchovy-based spread, Victorian invention, posh sandwich
+
+- **Coronation Chicken Sandwich** — Created for Queen Elizabeth II coronation 1953, curried chicken
+  - Significance: Royal occasion food, became standard sandwich
+
+- **Ploughman's Lunch** — Bread, cheese, cold meat, pickle, salad
+  - Origins: 1950s marketing campaign by cheese industry (not ancient tradition)
+  - Significance: British rural nostalgia, popular pub lunch
+
+### Royal Connection Foods
+
+- **Coronation Chicken** (created 1953)
+  - Occasion: Queen Elizabeth II coronation
+  - Recipe: Cooked chicken with curry mayo, served cold
+  - Significance: Royal occasion food, still served at events, became standard British dish
+  - Creator: Restaurant Constance Spry and Rosemary Hume
+
+- **Victoria Sponge** [see earlier] — Named after Queen Victoria, her favorite cake
+
+- **Bakewell Tart** — Named after Bakewell, Derbyshire; also called Bakewell Pudding
+  - Origin: 1859, Rutland Square Hotel, Bakewell
+  - Recipe: Jam base, almond-flavored filling, pastry crust
+  - Significance: Regional specialty, Victorian origin
+
+- **Eccles Cake** — Named after Eccles, Lancashire
+  - Recipe: Puff pastry with currant filling, dusted with sugar
+  - Era: Victorian, still made
+  - Significance: Regional Lancashire specialty
+
+- **Chelsea Bun** — Named after Chelsea, London area
+  - Recipe: Spiral bun with dried fruit and spices
+  - Era: 18th century origin
+  - Significance: Traditional London specialty
+
+- **Bath Oliver Biscuit** — Created by Dr. William Oliver in Bath (1750s)
+  - Recipe: Plain, crisp biscuit, often eaten with cheese
+  - Significance: Spa town speciality, Georgian innovation
+
+- **Digestive Biscuit** — British biscuit, popular with cheese or chocolate-covered
+  - Origin: 1892, McVitie's
+  - Significance: Standard British tea biscuit, exported globally
+  - Misconception: Name doesn't mean digestive benefit (originally thought to aid digestion)
+
+- **Jaffa Cake** — Orange jelly, chocolate coating, sponge base
+  - Origin: 1927, McVitie's
+  - Significance: Beloved British cake/biscuit (VAT debate: cake or biscuit?), iconic packaging
+
+- **Tunnock's Caramel Wafer** (Scottish) — Wafer with caramel filling, chocolate coating
+  - Scottish brand, 1948
+  - Iconic: Red wrapper, beloved treat
+
 ### Era & Evolution
 
 - **Medieval Period**: Pies, broths, preserved foods, spices
@@ -556,42 +622,150 @@ The Industrial Revolution (late 18th-19th centuries) transformed Britain from ag
   - Founder: Frederick Henry Royce and Charles Stewart Rolls
   - What: Luxury automobiles, aircraft engines
   - Significance: "The best car in the world," pinnacle of British engineering
+  - Royal: Supplied to British royalty and dignitaries
   - Modern: Luxury automotive brand, aerospace company
 
 - **Fortnum & Mason** (founded 1707, London)
-  - What: Luxury food retailer
-  - Significance: Royal warrant (supplier to monarchy), tea merchant, luxury goods
-  - Cultural: British excellence, wealth, tradition
+  - What: Luxury food retailer, tea merchant
+  - Significance: Royal warrant (official supplier to Her Majesty), established royal connection for 300+ years
+  - Royal: Hampers for royal occasions, trusted by monarchy
+  - Cultural: British excellence, wealth, tradition, iconic green packaging
+  - Products: Fine teas, preserves, luxury foods, Christmas hampers
 
 - **Wedgwood Pottery** (founded 1759, Staffordshire)
   - Founder: Josiah Wedgwood
   - What: Fine pottery and china
+  - Royal Warrant: Official supplier to British royalty
   - Significance: Industrial revolution pottery, Wedgwood blue pattern iconic
-  - Legacy: Still producing high-quality ceramics
+  - Legacy: Still producing high-quality ceramics, royal commissions
 
 - **Guinness** (founded 1759, Dublin) — *Irish-British hybrid*
   - What: Stout beer
   - Significance: Irish iconic brand, strong British cultural connection
-  - Impact: Global brand, distinctive taste and marketing
+  - Impact: Global brand, distinctive taste and marketing, iconic advertising
 
 - **Dunhill** (founded 1893, London)
   - What: Luxury goods (smoking, accessories, fashion)
-  - Significance: British elegance, understated luxury
+  - Royal Warrant: Official supplier to royal households
+  - Significance: British elegance, understated luxury, craftsmanship
 
 - **Burberry** (founded 1856, Basingstoke)
-  - What: Fashion house, trench coats
-  - Significance: British fashion heritage, iconic trench coat
-  - Modern: Luxury fashion brand
+  - What: Fashion house, trench coats, luxury goods
+  - Royal Warrant: Royal patron, official supplier
+  - Significance: British fashion heritage, iconic trench coat (weatherproof innovation)
+  - Modern: Luxury fashion brand, heritage check pattern
 
 - **Jaguar** (founded 1922, Coventry)
   - What: Luxury automobiles
   - Significance: British engineering, sleek design, speed
+  - Royal: Supplied to royalty, iconic British sports car
   - Cultural: British sports car iconic brand
 
 - **Aston Martin** (founded 1913, London area)
   - What: Luxury sports cars
   - Significance: British excellence, James Bond association
-  - Cultural: Pinnacle of British automotive design
+  - Royal: Supplied to royal households and dignitaries
+  - Cultural: Pinnacle of British automotive design, handcrafted luxury
+
+- **Bentley** (founded 1919, Cricklewood, London)
+  - What: Luxury automobiles
+  - Royal Warrant: Royal supplier
+  - Significance: Ultra-luxury cars, precision engineering, handcrafted
+  - Ownership: Now owned by Volkswagen, but retains British identity
+
+- **Liberty of London** (founded 1875, London)
+  - What: Department store, luxury fabrics, print designs
+  - Significance: Iconic British print patterns (Liberty prints), artistic merchandise
+  - Royal: Royal patron, supplied to royal households
+  - Cultural: British artistic tradition, fashion influence
+
+### Royal Warrant Brands (By Appointment to HM)
+
+Royal Warrant holders are businesses officially appointed to supply goods/services to the monarchy. Historical marks of trust and quality.
+
+- **Fortnum & Mason** [see above]
+- **Dunhill** [see above]
+- **Burberry** [see above]
+- **Bentley** [see above]
+- **Liberty** [see above]
+- **Paxton & Whitfield** (founded 1740, cheesemonger, London)
+  - What: Cheese specialist, luxury foods
+  - Royal Warrant: Historic supplier
+  - Significance: High-quality British and international cheeses
+
+- **Twinings Tea** (founded 1706, London)
+  - What: Tea merchant
+  - Royal Warrant: Official tea supplier to monarchy since 1837 (Victoria era)
+  - Significance: Oldest continuously operating tea company, specialty blends, empire tea trade history
+
+- **Floris Perfumery** (founded 1730, London)
+  - What: Perfume and fragrance
+  - Royal Warrant: Official supplier
+  - Significance: Historic perfumery, handcrafted scents, oldest perfumery in continuous operation in UK
+
+- **Ede & Ravenscroft** (founded 1689, London)
+  - What: Robes, formal wear, ceremonial dress
+  - Royal Warrant: Suppliers of ceremonial robes to monarchy
+  - Significance: Makerobvs of coronation robes, state ceremonial dress
+
+- **James Purdey & Sons** (founded 1814, London)
+  - What: Sporting guns and rifles, luxury firearms
+  - Royal Warrant: Royal supplier
+  - Significance: Handcrafted, bespoke weapons, pinnacle of British gunmaking
+
+- **Penhaligon's** (founded 1872, London)
+  - What: Perfume and grooming
+  - Royal Warrant: Official supplier
+  - Significance: Luxury British fragrances, Victorian heritage
+
+### Modern & Contemporary Brands
+
+- **Dyson** (founded 1983, Wiltshire)
+  - Founder: James Dyson
+  - What: Vacuum cleaners, hand dryers, air purifiers, innovative appliances
+  - Significance: British engineering innovation, bagless vacuum technology, design-forward products
+  - Global: Worldwide brand, British innovation exported
+
+- **De Beers** (founded South Africa, but British connection)
+  - Context: British company, diamonds, "A Diamond is Forever" marketing
+  - Significance: British marketing genius, monopoly history
+
+- **Clarins** (French, but strong UK presence)
+
+- **Lyle & Scott** (founded 1874, Hawick, Scotland)
+  - What: Knitwear and casual wear
+  - Significance: Scottish textile tradition, heritage brand
+
+- **Cath Kidston** (founded 1993, London)
+  - What: Home furnishings, bags, textiles, prints
+  - Significance: Contemporary British design, floral prints, colorful modernism
+
+- **Laura Ashley** (founded 1953, Wales)
+  - What: Home furnishings, fabrics, interior design
+  - Significance: British heritage design, floral patterns, lifestyle brand
+
+- **Mulberry** (founded 1971, Somerset)
+  - What: Luxury leather goods, handbags, fashion
+  - Significance: British luxury brand, handcrafted leather, iconic designs
+
+### British Invention: The Cup of Tea & Tea Culture
+
+- **Tea as British Institution** (18th century onwards)
+  - Origin: Portuguese princess Catherine of Braganza introduced tea to British court (1660s)
+  - Significance: Tea became defining British cultural practice, tea time, afternoon tea
+  - Empire Connection: Tea trade drove British East India Company, colonial expansion
+  - Modern: Tea remains central to British identity, kettle ubiquitous
+
+- **Tea Brands** (British heritage):
+  - **Twinings** [see above]
+  - **PG Tips** (founded 1930, tea bags)
+  - **Lipton** (British-American, strong British heritage)
+  - **Yorkshire Tea** (founded 1890, Yorkshire)
+  - **Typhoo** (founded 1903, Birmingham)
+
+- **Biscuits for Tea** (British tradition of pairing biscuits with tea):
+  - Digestive, Hobnob, Custard Cream, Jammy Dodger, Bourbon, Rich Tea, Malted Milk
+  - Significance: Elaborate category of biscuits designed specifically for tea dunking
 
 ### Historic Industrial Companies
 
