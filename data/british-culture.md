@@ -81,6 +81,27 @@ Organized by category, compact table format with emoji for easy scanning. Includ
 
 **Medieval Legacy**: Defined feudalism, monarchy, Common Law, architecture, literature. Created England as unified kingdom. Medieval knights, chivalry, castles remain iconic symbols. Foundations of modern British institutions.
 
+### Celtic & Arthurian Legends 🗡️
+
+| Legend/Figure | 🌍 Origin | 📖 Source | 🎖️ Significance | 📝 Notes |
+|---------------|----------|----------|-----------------|---------|
+| 👑 **King Arthur** | Welsh/Cornish/British | Welsh legends, Geoffrey of Monmouth (1136), Malory (1485) | **Legendary British king; unifier against Saxon invaders; central to British identity** | Possibly based on historical figure (5th-6th century); most famous legendary king; symbol of British resistance, chivalry, noble ideals |
+| 🧙 **Merlin** | Welsh | Welsh mythology, Arthurian legend | Wizard, advisor, prophet; magical figure | Possibly based on historical Welsh bard; symbol of wisdom, magic, Druidic tradition |
+| ⚔️ **Knights of the Round Table** | Arthurian legend | Medieval literature | Chivalry, equality, noble quest | Lancelot, Galahad, Gawain, Kay; idealized knights; Camelot as perfect kingdom |
+| 🏰 **Camelot** | Legendary | Arthurian legend | Legendary castle/kingdom; seat of King Arthur | Possibly inspired by real castles (Tintagel, Glastonbury); symbol of lost golden age; British ideal |
+| 🗡️ **Excalibur** | Legendary | Welsh/Arthurian legend | Legendary sword; magical; Arthur's weapon | Symbol of kingship, destiny; magical realism in British mythology |
+| 👸 **Queen Guinevere** | Arthurian legend | Medieval literature | Arthur's queen; tragic romance with Lancelot | Complex character; loyalty vs. passion; contributed to Camelot's fall |
+| 🔮 **Lady of the Lake** | Arthurian legend | Medieval literature | Magical figure; gives Arthur Excalibur; mystical power | Female magical power; connection to Otherworld; Celtic mysticism |
+| 👑 **Mordred** | Arthurian legend | Medieval literature | Arthur's illegitimate son; betrayer; tragic antagonist | Represents internal destruction; tragedy of fate; ambiguous morality |
+| 🍀 **Druids** | Celtic pre-Roman | Celtic mythology, Roman accounts | Priests, judges, keepers of knowledge; magical powers | Part of Celtic religious system; oral tradition; magic and wisdom; later romanticized |
+| 🐉 **Dragons** | Celtic/British | Welsh mythology, heraldry | Symbol of Wales (Welsh flag); guardian creatures; magical beings | Y Ddraig Goch (Red Dragon) on Welsh flag; symbol of protection, power, ancient lineage |
+| 👶 **Finn mac Cumhaill** | Irish/Celtic | Irish mythology (Fenian Cycle) | Irish legendary warrior; magical powers; great hunter | Similar heroic archetype to Arthur; Irish equivalent of Arthurian legend |
+| 🎵 **Bard/Scop Tradition** | Celtic/Anglo-Saxon | Oral tradition, preserved in literature | Storytellers, poets, musicians; keepers of history and legend | Celtic bards (filidh); Anglo-Saxon scops; oral culture transformed to written medieval literature |
+
+**Legend Significance**: Arthurian legend defined British chivalric ideals, influenced European literature (French romances, medieval epics), and continues to inspire modern retellings (T.H. White, Marion Zimmer Bradley, modern films/TV). Connection to Celtic past and mysticism. Symbol of Britain's pre-Saxon identity and enduring hope (Arthur returns when Britain needs him most).
+
+**Celtic Mythology Legacy**: Dragons, magic, Otherworldly realms, quests, honor codes continue in modern British culture (Harry Potter, Tolkien, contemporary fantasy). Connection to ancient Celtic spirituality and Druidic tradition. Welsh language and place names preserve Celtic heritage.
+
 ---
 
 ## 🍽️ Food & Cuisine
