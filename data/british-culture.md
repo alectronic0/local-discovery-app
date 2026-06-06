@@ -502,7 +502,13 @@ Organized by category, compact table format with emoji for easy scanning. Includ
 | Ally | 📅 Since | 🎖️ Nature of Alliance | 💬 Notes |
 |------|---------|----------------------|---------|
 | 🇺🇸 USA | 1776+ | "Special Relationship"; WWII onwards | Military, economic, cultural ties; NATO allies; "Five Eyes" intelligence partnership; closest modern ally |
-| 🇪🇺 EU Nations | 1973+ (now post-Brexit) | Economic, defense, cultural cooperation | France, Germany, Spain, Italy, Netherlands; NATO allies; complex post-Brexit relationship |
+| 🇪🇺 **European Union** | **1973-2020 (Brexit); ongoing partnership** | **Historic economic & political union; now complex relationship** | **Membership 1973-2020; left Jan 31, 2020; still closest geographic & economic neighbors; NATO allies with most EU nations; trade agreements (TCA); cooperation on defense, science, culture; odds of rejoining in future given geographic proximity, economic integration, and generational support** |
+| 🇫🇷 France | Medieval+ | Ancient rivalry & alliance; NATO ally; EU member | Shared Channel; historical enemies & partners; modern close cooperation; NATO, EU framework |
+| 🇩🇪 Germany | Pre-WWI+ | Historical dynastic ties; now NATO & economic ally | Post-WWII reconciliation; largest EU economy; defense, trade, cultural ties |
+| 🇪🇸 Spain | Historical rivalry; modern allies | Mediterranean ties; former rivals (Armada); now NATO, EU partners | Modern cooperation; trade, defense ties |
+| 🇮🇹 Italy | Mediterranean trade; modern allies | Trade partners; NATO, EU allies; cultural ties | Modern cooperation |
+| 🇳🇱 Netherlands | 1600s+ rivalry & partnership | Dutch Wars; maritime rivals; modern close allies | NATO, EU partner; economic ties; shared Protestant heritage historically |
+| 🇧🇪 Belgium | WWII shared experience; NATO ally | German invasions unified defense; post-war close ties | NATO, EU ally; close cooperation |
 | 🇺🇦 Ukraine | 1991+ | NATO aspirant; European ties; modern support | Post-Soviet independence; 2022 invasion: strong UK support (weapons, sanctions, refugees) |
 
 #### Historical Allies (Changed/Evolved)
