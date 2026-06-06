@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveUK - Area Structure & Metadata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .nav-links {
+            margin-top: 1rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .structure-tree {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .tree-item {
+            border-bottom: 1px solid #eee;
+        }
+
+        .tree-item:last-child {
+            border-bottom: none;
+        }
+
+        .tree-header {
+            padding: 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.2s;
+            font-weight: 600;
+        }
+
+        .tree-header:hover {
+            background: #f9f9f9;
+        }
+
+        .tree-header.level-0 {
+            background: #667eea;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .tree-header.level-1 {
+            background: #764ba2;
+            color: white;
+            font-size: 1.1rem;
+            padding-left: 3rem;
+        }
+
+        .tree-header.level-2 {
+            background: #f0f0f0;
+            font-size: 1rem;
+            padding-left: 4.5rem;
+        }
+
+        .tree-header.level-3 {
+            background: white;
+            font-size: 0.95rem;
+            padding-left: 6rem;
+            border-left: 3px solid #667eea;
+        }
+
+        .tree-toggle {
+            display: inline-block;
+            margin-right: 0.5rem;
+            width: 20px;
+            text-align: center;
+            color: currentColor;
+        }
+
+        .tree-title {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .flag-icon {
+            font-size: 1.5rem;
+        }
+
+        .tree-content {
+            display: none;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .tree-content.open {
+            display: block;
+        }
+
+        .metadata {
+            background: white;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+
+        .metadata-row {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .metadata-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .metadata-label {
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .metadata-value {
+            color: #555;
+        }
+
+        .website-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .website-link:hover {
+            text-decoration: underline;
+        }
+
+        .council-structure {
+            background: #f9f9f9;
+            padding: 0.75rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8f0ff;
+            color: #667eea;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🇬🇧 LoveUK Area Structure & Metadata</h1>
+        <p>UK hierarchy, council information, websites, and local metadata</p>
+        <div class="nav-links">
+            <a href="index.html">← Back to Map</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="structure-tree" id="structureTree">
+            <!-- Dynamic content will be generated here -->
+        </div>
+    </div>
+
+    <script src="data/area-structure.js"></script>
+    <script src="js/structure-view.js"></script>
+</body>
+</html>
