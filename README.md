@@ -1,15 +1,40 @@
-# LocalHerts — Better Understand Your Local Area
+# LoveUK — Discover & Celebrate Your Local Area
 
-An interactive map discovery tool to explore local public services, transport, amenities, and community resources across the UK.
+**🌍 Live Demo:** https://alectronic0.github.io/local-discovery-app/
+
+## Mission
+
+LoveUK is a comprehensive local discovery platform for the UK, built on public data and third-party APIs. Our vision is to make the UK visible, accessible, and discoverable to everyone—helping you understand, celebrate, and explore your local area with pride.
+
+We're inspired by Japan's approach to local tourism and heritage (mascot culture, regional pride, accessible local exploration), and we're bringing that same energy to UK traditions—modern, visual, progressive, yet deeply rooted in heritage.
+
+### Local Initiatives
+
+LoveUK powers local discovery across the UK through community-focused initiatives:
+- **LoveHerts** — Hertfordshire discovery
+- **LoveWGC** — Welwyn Garden City discovery
+- **[Add your area]** — Each town, council, and region can have its own branded LoveUK experience
+
+Each initiative celebrates the unique character, heritage, and attractions of its area while connecting to the broader UK network.
+
+## What You Can Discover
+
+- **Public Transport**: Rail lines, bus routes, stations, and stops
+- **Nature & Outdoors**: Nature trails, cycle routes, country parks, forests
+- **Waterways**: Canals, rivers, ferries, boat routes
+- **Heritage & Culture**: National heritage sites, historical landmarks, local museums
+- **Community**: Parks, play areas, leisure facilities, community halls
+- **Local Governance**: Council boundaries, contact information, planning applications
+- **Events & Activities**: Local events, community gatherings, activities happening near you
 
 ## Features
 
-- **Interactive Map**: Browse councils, transport routes, and local venues
-- **Layer Toggles**: Filter by region, country, and transport type (rail/bus)
-- **Postcode Search**: Find your location and nearby services
-- **Transport Networks**: Visualize rail lines and bus routes with authentic network colours
-- **Venue Discovery**: Locate community halls, leisure facilities, nature reserves, and transport hubs
-- **Council Links**: Click any council to access their website and services
+- **Interactive Map**: Browse councils, transport, heritage sites, nature routes, and local venues by region
+- **Layer Toggles**: Filter by country, region, and category (transport, heritage, nature, events)
+- **Postcode Search**: Find your location and discover what's nearby
+- **Visual Networks**: Authentic transport colours (TfL network, operator branding)
+- **Council Integration**: Click any council to access their website, services, and planning data
+- **Super Visual**: Beautiful map layers, colour-coded by region and category
 
 ## Todo List
 
@@ -39,18 +64,28 @@ An interactive map discovery tool to explore local public services, transport, a
 - [ ] Performance optimization (boundary caching, data pagination)
 
 ### Phase 4: Enhanced Discovery
-- [ ] Live council meeting schedules
-- [ ] Planning applications layer
-- [ ] Budget/spending transparency data
-- [ ] Councillor directory
-- [ ] Community events aggregation
+- [ ] **Nature & Outdoors**: Nature trails, walking routes, cycle paths, forests, country parks
+- [ ] **Waterways**: Canal routes, rivers, ferries, boat launching points
+- [ ] **Heritage & Culture**: National heritage sites, historical landmarks, museums, local stories
+- [ ] **Community**: Parks, play areas, leisure facilities, community spaces
+- [ ] **Events & Activities**: Local events, festivals, community gatherings, activities calendar
+- [ ] **Planning & Governance**: Planning applications, council meetings, local policy transparency
+- [ ] **Councillor Directory**: Local councillors, contact information, constituent services
 
-### Phase 5: Polish
+### Phase 5: Polish & Accessibility
 - [ ] Accessibility audit (WCAG 2.1 AA)
 - [ ] Performance metrics (Core Web Vitals)
+- [ ] Mobile-first responsive design
 - [ ] Offline support (service worker)
-- [ ] Responsive design testing
 - [ ] Deployment & CI/CD
+
+### Phase 6: Local Pride & Heritage Celebration
+- [ ] Regional mascots & branding (inspired by Japanese local tourism)
+- [ ] "Stories of Place": Local history, heritage narratives, cultural pride
+- [ ] Heritage trails: Curated journeys through local landmarks and history
+- [ ] Community contributions: Allow locals to share stories, photos, recommendations
+- [ ] Local economy integration: Support local businesses, makers, heritage crafts
+- [ ] Educational layers: Learn about UK traditions, architecture, conservation
 
 ## Architecture
 
@@ -89,10 +124,14 @@ http://localhost:8000
 
 ## Data Sources
 
-- **Boundaries**: ONS Geography Portal (OpenData)
-- **Councils**: Wikipedia UK local authorities + official websites
-- **Transport**: OpenStreetMap Overpass API (real-time, unreliable) + static fallback
-- **Venues**: Sample data (future: integrate local Open Data sources)
+- **Boundaries & Governance**: ONS Geography Portal, Wikipedia UK councils
+- **Transport**: OpenStreetMap Overpass API, TfL APIs, National Rail data
+- **Nature & Outdoors**: OpenStreetMap, Natural England, Scottish Natural Heritage
+- **Heritage**: Historic Environment Record, English Heritage, National Trust, local authority records
+- **Waterways**: Canal & River Trust, Environment Agency, local maritime records
+- **Events**: Local authority event calendars, community platforms, Eventbrite
+- **Planning**: Local authority planning portals, PlanIt UK
+- **Venues**: OpenStreetMap, local Open Data sources, community submissions
 
 ## Contributing
 
@@ -101,6 +140,12 @@ To add or improve features:
 2. Test transport routes by checking console logs for load status
 3. Update councils.json with new regions/councils as needed
 4. Use Overpass API queries to generate realistic GeoJSON
+
+To launch a local LoveUK initiative:
+1. All local initiatives (LoveHerts, LoveWGC, etc.) run on the same LoveUK platform
+2. Customize branding, colours, and regional focus within your area's data
+3. Add local data sources and stories specific to your region
+4. Help celebrate what makes your area special
 
 ## License
 
