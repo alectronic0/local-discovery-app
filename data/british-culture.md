@@ -1,6 +1,23 @@
+# 🚧 WIP: Understanding British Culture — The Good, The Bad, The Ugly
+
+## 🤖 AI-Assisted Exploration (Work In Progress)
+
+This document is a **living, collaborative effort** using AI to help us understand British culture comprehensively—not just celebrating achievements, but honestly acknowledging the full picture: innovations alongside imperialism, brilliance alongside brutality.
+
+**Goals:**
+- 🎯 **The Good** — Document genuine contributions: science, arts, food, democracy, invention
+- 🎯 **The Bad** — Acknowledge harm: colonialism, slavery, racism, extraction, cultural domination
+- 🎯 **The Ugly** — Confront uncomfortable truths: Opium Wars, famines, systemic oppression
+- 🎯 **The Complex** — Show nuance: why something can be both an achievement AND harmful
+
+**Not:** A propaganda document or tourism guide.
+**Is:** A comprehensive, honest reckoning with British culture—inheritance of both pride and responsibility.
+
+---
+
 # 🇬🇧 British Culture & Heritage
 
-A celebration and honest reckoning of Britain's contributions, achievements, and darker chapters. Organized by category, compact format with emoji for easy scanning.
+Organized by category, compact table format with emoji for easy scanning. Includes achievements, allies, conflicts, and honest examination of darker chapters.
 
 ---
 
