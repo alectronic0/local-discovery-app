@@ -13,7 +13,70 @@ html, body {
 
 body {
     display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.map-section {
+    flex: 3;
+    width: 75%;
+    height: 100%;
+    position: relative;
+    display: flex;
     flex-direction: column;
+}
+
+.calendar-section {
+    flex: 1;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-left: 1px solid #ddd;
+    transition: width 0.3s ease, flex 0.3s ease;
+}
+
+.calendar-section.hidden {
+    width: 0;
+    flex: 0;
+    overflow: hidden;
+}
+
+.toggle-calendar-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 100;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-calendar-btn:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+.calendar-section.hidden .toggle-calendar-btn {
+    right: -42px;
 }
 
 #map {
@@ -76,10 +139,123 @@ body {
     border-color: #185FA5;
 }
 
+/* Layer controls */
+.layer-controls {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.toggle-btn {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+    background: #f0f0f0;
+    border-color: #999;
+}
+
+.layer-tree {
+    margin-top: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.country-group {
+    margin-bottom: 10px;
+}
+
+.country-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    user-select: none;
+}
+
+.country-toggle input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.region-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 18px;
+    margin-top: 4px;
+    padding-left: 6px;
+    border-left: 2px solid #e0e0e0;
+}
+
+.region-list label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 0;
+    cursor: pointer;
+    font-size: 12px;
+    user-select: none;
+}
+
+.region-list input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.council-popup {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 /* Mobile responsive */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .map-section {
+        width: 100%;
+        height: 60%;
+        flex: 3;
+    }
+
+    .calendar-section {
+        width: 100%;
+        height: 40%;
+        flex: 1;
+        border-left: none;
+        border-top: 1px solid #ddd;
+    }
+
+    .calendar-section.hidden {
+        width: 100%;
+        height: 0;
+    }
+
+    .toggle-calendar-btn {
+        top: 12px;
+        right: 12px;
+    }
+
+    .calendar-section.hidden .toggle-calendar-btn {
+        right: 12px;
+        bottom: auto;
+    }
+}
+
 @media (max-width: 600px) {
     #filter-panel {
-        max-width: 100%;
+        max-width: calc(100% - 16px);
         left: 8px;
         right: 8px;
         width: auto;
@@ -95,5 +271,29 @@ body {
         min-width: 80px;
         font-size: 12px;
         padding: 6px 8px;
+    }
+
+    .layer-tree {
+        max-height: 250px;
+        font-size: 11px;
+    }
+
+    .region-list {
+        margin-left: 14px;
+        font-size: 11px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .map-section {
+        width: 100%;
+        height: 50%;
+    }
+
+    .calendar-section {
+        width: 100%;
+        height: 50%;
     }
 }

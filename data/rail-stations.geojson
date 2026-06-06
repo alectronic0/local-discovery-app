@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "king-cross",
+        "name": "King's Cross",
+        "ref": "KGX",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.12, 51.53]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st-pancras",
+        "name": "St Pancras International",
+        "ref": "STP",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.13, 51.53]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "stevenage",
+        "name": "Stevenage",
+        "ref": "SVG",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.20, 51.90]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hitchin",
+        "name": "Hitchin",
+        "ref": "HIT",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.28, 51.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "letchworth",
+        "name": "Letchworth",
+        "ref": "LET",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.31, 52.02]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kings-lynn",
+        "name": "King's Lynn",
+        "ref": "KL",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.38, 52.75]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "peterborough",
+        "name": "Peterborough",
+        "ref": "PB",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.25, 52.57]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cambridge",
+        "name": "Cambridge",
+        "ref": "CBG",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.12, 52.20]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "london-victoria",
+        "name": "Victoria",
+        "ref": "VIC",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.14, 51.49]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "london-waterloo",
+        "name": "Waterloo",
+        "ref": "WAT",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.11, 51.50]
+      }
+    }
+  ]
+}

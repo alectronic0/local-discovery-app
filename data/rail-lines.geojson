@@ -1,0 +1,169 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "great-northern-main",
+        "name": "Great Northern Main Line",
+        "ref": "GN",
+        "operator": "Network Rail",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.22, 51.83],
+          [-0.18, 51.90],
+          [-0.15, 51.98],
+          [-0.12, 52.05]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "thameslink",
+        "name": "Thameslink",
+        "ref": "TL",
+        "operator": "Network Rail",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.35, 51.65],
+          [-0.25, 51.75],
+          [-0.15, 51.82],
+          [-0.05, 51.88],
+          [0.15, 51.92]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "metropolitan-line",
+        "name": "Metropolitan Line",
+        "ref": "MET",
+        "operator": "TfL",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.65, 51.90],
+          [-0.50, 51.92],
+          [-0.35, 51.93],
+          [-0.22, 51.88],
+          [-0.10, 51.82],
+          [0.05, 51.75]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "circle-line",
+        "name": "Circle Line",
+        "ref": "CIRCLE",
+        "operator": "TfL",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.40, 51.75],
+          [-0.25, 51.72],
+          [-0.10, 51.70],
+          [0.05, 51.72],
+          [0.10, 51.85],
+          [-0.05, 51.92],
+          [-0.25, 51.88],
+          [-0.40, 51.75]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jubilee-line",
+        "name": "Jubilee Line",
+        "ref": "JUB",
+        "operator": "TfL",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.35, 51.55],
+          [-0.28, 51.62],
+          [-0.20, 51.70],
+          [-0.10, 51.80],
+          [0.05, 51.85]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "piccadilly-line",
+        "name": "Piccadilly Line",
+        "ref": "PIC",
+        "operator": "TfL",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.70, 51.72],
+          [-0.50, 51.68],
+          [-0.30, 51.65],
+          [-0.10, 51.70],
+          [0.10, 51.75]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "district-line",
+        "name": "District Line",
+        "ref": "DIST",
+        "operator": "TfL",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.60, 51.78],
+          [-0.40, 51.75],
+          [-0.20, 51.73],
+          [0.00, 51.75],
+          [0.15, 51.82]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "london-overground",
+        "name": "London Overground",
+        "ref": "LO",
+        "operator": "TfL",
+        "type": "rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.65, 51.88],
+          [-0.50, 51.92],
+          [-0.35, 51.95],
+          [-0.20, 51.92],
+          [-0.05, 51.88],
+          [0.10, 51.82]
+        ]
+      }
+    }
+  ]
+}

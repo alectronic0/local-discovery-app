@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "metroline-15",
+        "name": "Route 15",
+        "ref": "15",
+        "operator": "Metroline",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.30, 51.70],
+          [-0.25, 51.72],
+          [-0.20, 51.75],
+          [-0.15, 51.78],
+          [-0.10, 51.80]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "arriva-35",
+        "name": "Route 35",
+        "ref": "35",
+        "operator": "Arriva",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.22, 51.65],
+          [-0.20, 51.70],
+          [-0.18, 51.75],
+          [-0.15, 51.80],
+          [-0.12, 51.85]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "stagecoach-66",
+        "name": "Route 66",
+        "ref": "66",
+        "operator": "Stagecoach",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.50, 51.80],
+          [-0.40, 51.82],
+          [-0.30, 51.85],
+          [-0.20, 51.88],
+          [-0.10, 51.90]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "goahead-101",
+        "name": "Route 101",
+        "ref": "101",
+        "operator": "Go-Ahead",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.35, 51.75],
+          [-0.28, 51.78],
+          [-0.20, 51.82],
+          [-0.10, 51.85],
+          [0.05, 51.88]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "metroline-24",
+        "name": "Route 24",
+        "ref": "24",
+        "operator": "Metroline",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.40, 51.70],
+          [-0.30, 51.72],
+          [-0.20, 51.75],
+          [-0.10, 51.78],
+          [0.05, 51.80]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "arriva-142",
+        "name": "Route 142",
+        "ref": "142",
+        "operator": "Arriva",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.60, 51.85],
+          [-0.50, 51.88],
+          [-0.40, 51.90],
+          [-0.30, 51.92],
+          [-0.20, 51.95]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "london-buses-n73",
+        "name": "Route N73",
+        "ref": "N73",
+        "operator": "London Buses",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.25, 51.60],
+          [-0.20, 51.65],
+          [-0.15, 51.70],
+          [-0.10, 51.75],
+          [-0.05, 51.80]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "first-200",
+        "name": "Route 200",
+        "ref": "200",
+        "operator": "First",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-0.70, 51.75],
+          [-0.60, 51.78],
+          [-0.50, 51.80],
+          [-0.40, 51.82],
+          [-0.30, 51.85]
+        ]
+      }
+    }
+  ]
+}

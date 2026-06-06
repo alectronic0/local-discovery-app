@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="filter-panel">
-        <input
-            type="text"
-            id="postcode-search"
-            placeholder="Enter postcode (e.g., AL10 0LA)"
-            class="postcode-input"
-        >
-        <div id="filter-buttons" class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="community_hall">Community Halls</button>
-            <button class="filter-btn" data-filter="leisure">Leisure</button>
-            <button class="filter-btn" data-filter="nature">Nature</button>
-            <button class="filter-btn" data-filter="transport">Transport</button>
+    <div class="main-container">
+        <div class="map-section">
+            <div id="filter-panel">
+                <input
+                    type="text"
+                    id="postcode-search"
+                    placeholder="Enter postcode (e.g., AL10 0LA)"
+                    class="postcode-input"
+                >
+                <div id="filter-buttons" class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="community_hall">Community Halls</button>
+                    <button class="filter-btn" data-filter="leisure">Leisure</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                    <button class="filter-btn" data-filter="transport">Transport</button>
+                </div>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <div class="calendar-section">
+            <button id="toggle-calendar-btn" class="toggle-calendar-btn" title="Toggle calendar">◀</button>
+            <iframe id="calendar-frame" src="https://calendar.google.com/calendar/embed?src=c5177c68e08c4597e87d66c119310954ff58af47d4e269b32a1ee705b10fa393%40group.calendar.google.com&ctz=Europe%2FLondon" style="border: 0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
 
-    <div id="map"></div>
-
     <!-- API key is added locally, not committed to repo -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh1Azmvcm4Yq2l6ylQMCvjjXJdK1O2WFU&libraries=geometry,places"></script>
+
+    <!-- Modular JS files -->
+    <script src="js/utils.js"></script>
+    <script src="js/boundaries.js"></script>
+    <script src="js/layers.js"></script>
+    <script src="js/council-links.js"></script>
+    <script src="js/transport.js"></script>
+    <script src="js/retail.js"></script>
+
+    <!-- Main app orchestration -->
     <script src="app.js"></script>
 </body>
 </html>

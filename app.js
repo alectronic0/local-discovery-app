@@ -1,42 +1,32 @@
-// Map and data globals
+/**
+ * app.js — Main application orchestration
+ * Coordinates boundaries, layers, council links, and utilities
+ * Modular architecture: loads js/boundaries.js, js/layers.js, js/council-links.js, js/utils.js
+ */
+
+// Globals
 let map;
-let districtPolygons = [];
-let venueMarkers = [];
+let allCouncils = [];
+let councilsDataLookup = {};
 let allVenues = [];
-let activeFilters = new Set(['all']);
+let venueMarkers = [];
+let railMarkers = [];
+let busMarkers = [];
+let retailMarkers = [];
 
-// Hertfordshire bounds
-const HERTS_BOUNDS = {
-    north: 52.0,
-    south: 51.65,
-    east: 0.25,
-    west: -0.65
-};
-
+// Hertfordshire center for default view
 const HERTS_CENTER = {
     lat: 51.825,
     lng: -0.22
 };
 
-// GSS codes for Herts districts
-const HERTS_DISTRICTS = {
-    'E07000241': 'Welwyn Hatfield',
-    'E07000240': 'St Albans',
-    'E07000099': 'Hertsmere',
-    'E07000103': 'Watford',
-    'E07000102': 'Three Rivers',
-    'E07000096': 'Dacorum',
-    'E07000095': 'Broxbourne',
-    'E07000242': 'East Hertfordshire',
-    'E07000243': 'Stevenage',
-    'E07000098': 'North Hertfordshire'
-};
-
-// Initialize map on page load
+/**
+ * Initialize map and load all data
+ */
 window.addEventListener('load', initMap);
 
 async function initMap() {
-    // Create map centered on Hertfordshire
+    // Create map centered on Hertfordshire (will expand to show UK on toggle)
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
         center: HERTS_CENTER,
@@ -53,8 +43,8 @@ async function initMap() {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
                 };
-                // TODO: zoom to user's district and fetch local venues
                 console.log('User location:', userLoc);
+                // TODO: zoom to user's district and fetch local venues
             },
             (error) => {
                 console.log('Geolocation permission denied or unavailable');
@@ -62,77 +52,86 @@ async function initMap() {
         );
     }
 
-    // Load district boundaries from ONS ArcGIS API
-    await loadHertsDistricts();
+    // Load council data
+    await loadCouncils();
 
-    // Load venue markers from static JSON
+    // Load and render UK boundaries
+    await loadAndRenderBoundaries();
+
+    // Set up layer toggles
+    setupLayerToggles();
+
+    // Load and render venue markers
     await loadVenues();
 
-    // Set up filter buttons
-    setupFilterButtons();
+    // Load transport layers (rail and bus)
+    await loadTransportLayers();
+
+    // Load retail locations
+    await loadRetailLayer();
+
+    // Set up calendar toggle
+    setupCalendarToggle();
 
     // Set up postcode search
     setupPostcodeSearch();
 }
 
 /**
- * Fetch Hertfordshire district boundaries from ONS ArcGIS FeatureServer
- * Queries for all 10 Herts districts by name pattern matching
+ * Load councils.json and build lookup
  */
-async function loadHertsDistricts() {
-    const ONS_API = 'https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2024_Boundaries_UK_BGC/FeatureServer/0/query';
-
-    // Query pattern: match Herts district names
-    const whereClause = "LAD24NM LIKE '%Hertf%' OR LAD24NM LIKE 'Welwyn%' OR LAD24NM LIKE 'Watford%' OR LAD24NM LIKE 'Stevenage%' OR LAD24NM LIKE 'Dacorum%' OR LAD24NM LIKE 'Broxbourne%' OR LAD24NM LIKE 'Hertsmere%' OR LAD24NM LIKE 'Three Rivers%' OR LAD24NM LIKE 'East Hertfordshire%' OR LAD24NM LIKE 'North Hertfordshire%'";
-
-    const params = new URLSearchParams({
-        where: whereClause,
-        outFields: 'LAD24CD,LAD24NM',
-        f: 'geojson'
-    });
-
+async function loadCouncils() {
     try {
-        const response = await fetch(`${ONS_API}?${params}`);
-        const geojson = await response.json();
-
-        if (!geojson.features || geojson.features.length === 0) {
-            console.error('No Herts districts found from ONS API');
-            return;
-        }
-
-        // Add GeoJSON to map
-        map.data.addGeoJson(geojson);
-
-        // Style all districts with default color
-        map.data.setStyle((feature) => {
-            const gssCode = feature.getProperty('LAD24CD');
-            const isWelwynHatfield = gssCode === 'E07000241';
-
-            return {
-                fillColor: isWelwynHatfield ? '#EF9F27' : '#3B8BD4',
-                fillOpacity: isWelwynHatfield ? 0.3 : 0.15,
-                strokeColor: isWelwynHatfield ? '#854F0B' : '#185FA5',
-                strokeWeight: isWelwynHatfield ? 2.5 : 1.5,
-                clickable: true
-            };
-        });
-
-        // Add click listener for districts
-        map.data.addListener('click', (event) => {
-            const gssCode = event.feature.getProperty('LAD24CD');
-            const districtName = event.feature.getProperty('LAD24NM');
-            console.log(`Clicked district: ${districtName} (${gssCode})`);
-            // TODO: Show sidebar with district info
-        });
-
-        console.log(`Loaded ${geojson.features.length} Herts district boundaries`);
+        const response = await fetch('data/councils.json');
+        allCouncils = await response.json();
+        councilsDataLookup = buildCouncilLookup(allCouncils);
+        console.log(`Loaded ${allCouncils.length} councils`);
     } catch (error) {
-        console.error('Error loading districts from ONS API:', error);
+        console.error('Error loading councils:', error);
     }
 }
 
 /**
- * Load venue markers from static JSON file
+ * Load UK boundaries from ONS and render to map
+ */
+async function loadAndRenderBoundaries() {
+    try {
+        const geojson = await loadUKBoundaries();
+        if (!geojson) {
+            console.error('Failed to load boundaries');
+            return;
+        }
+
+        renderBoundariesToMap(map, councilsDataLookup, (council) => {
+            // Council click handler
+            showCouncilPopup(map, { lat: council.lat, lng: council.lng }, council);
+        });
+
+        setupCouncilClickHandlers(map, councilsDataLookup);
+        console.log('Boundaries loaded and rendered');
+    } catch (error) {
+        console.error('Error loading boundaries:', error);
+    }
+}
+
+/**
+ * Set up layer toggle controls
+ */
+function setupLayerToggles() {
+    const filterPanel = document.querySelector('.filter-panel') || document.getElementById('filter-panel');
+    if (!filterPanel) {
+        console.error('Filter panel not found');
+        return;
+    }
+
+    renderLayerToggles(filterPanel, (visibleRegions) => {
+        // When regions are toggled, update boundary visibility
+        toggleBoundariesByRegion(map, councilsDataLookup, visibleRegions);
+    });
+}
+
+/**
+ * Load venue markers from static JSON
  */
 async function loadVenues() {
     try {
@@ -149,9 +148,19 @@ async function loadVenues() {
                 icon: getMarkerIcon(venue.type)
             });
 
-            // Add click listener for popup
+            // Add click listener
             marker.addListener('click', () => {
-                showVenuePopup(marker, venue);
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div style="padding: 8px; font-size: 13px;">
+                            <strong>${venue.name}</strong><br>
+                            ${venue.address || ''}<br>
+                            ${venue.phone ? `<a href="tel:${venue.phone}">${venue.phone}</a>` : ''}<br>
+                            ${venue.website ? `<a href="${venue.website}" target="_blank">Website</a>` : ''}
+                        </div>
+                    `
+                });
+                infoWindow.open(map, marker);
             });
 
             venueMarkers.push({
@@ -180,71 +189,72 @@ function getMarkerIcon(type) {
 }
 
 /**
- * Show popup on venue marker click
+ * Load rail and bus routes, stations, and stops from OpenStreetMap
  */
-function showVenuePopup(marker, venue) {
-    const infoWindow = new google.maps.InfoWindow({
-        content: `
-            <div style="padding: 8px; font-size: 13px;">
-                <strong>${venue.name}</strong><br>
-                ${venue.address || ''}<br>
-                ${venue.phone ? `<a href="tel:${venue.phone}">${venue.phone}</a>` : ''}<br>
-                ${venue.website ? `<a href="${venue.website}" target="_blank">Website</a>` : ''}
-            </div>
-        `
-    });
-    infoWindow.open(map, marker);
+async function loadTransportLayers() {
+    try {
+        const railGeoJSON = await loadRailLines();
+        const busGeoJSON = await loadBusRoutes();
+        const stationsGeoJSON = await loadRailStations();
+        const stopsGeoJSON = await loadBusStops();
+
+        if (railGeoJSON || busGeoJSON) {
+            renderTransportToMap(map, railGeoJSON, busGeoJSON);
+        }
+
+        if (stationsGeoJSON) {
+            renderStationsToMap(map, stationsGeoJSON);
+        }
+
+        if (stopsGeoJSON) {
+            renderStopsToMap(map, stopsGeoJSON);
+        }
+
+        console.log('Transport layers loaded (routes, stations, stops)');
+    } catch (error) {
+        console.error('Error loading transport layers:', error);
+    }
 }
 
 /**
- * Set up filter button listeners
+ * Load retail locations from OpenStreetMap
  */
-function setupFilterButtons() {
-    const buttons = document.querySelectorAll('.filter-btn');
-    buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const filter = btn.dataset.filter;
+async function loadRetailLayer() {
+    try {
+        const retailGeoJSON = await loadRetailLocations();
 
-            // Toggle active state
-            if (filter === 'all') {
-                // "All" button: clear all filters and select "all"
-                buttons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                activeFilters = new Set(['all']);
-            } else {
-                // Category button: toggle it, deselect "all" if any category is selected
-                const allBtn = document.querySelector('[data-filter="all"]');
-                allBtn.classList.remove('active');
+        if (retailGeoJSON && retailGeoJSON.features.length > 0) {
+            retailMarkers = renderRetailToMap(map, retailGeoJSON);
+            console.log('Retail layer loaded');
+        }
+    } catch (error) {
+        console.error('Error loading retail layer:', error);
+    }
+}
 
-                if (btn.classList.contains('active')) {
-                    btn.classList.remove('active');
-                    activeFilters.delete(filter);
-                } else {
-                    btn.classList.add('active');
-                    activeFilters.delete('all');
-                    activeFilters.add(filter);
-                }
+/**
+ * Set up calendar toggle button
+ */
+function setupCalendarToggle() {
+    const toggleBtn = document.getElementById('toggle-calendar-btn');
+    const calendarSection = document.querySelector('.calendar-section');
 
-                // If no filters selected, default to "all"
-                if (activeFilters.size === 0) {
-                    allBtn.classList.add('active');
-                    activeFilters.add('all');
-                }
+    if (!toggleBtn || !calendarSection) {
+        console.warn('Calendar toggle elements not found');
+        return;
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        calendarSection.classList.toggle('hidden');
+        toggleBtn.textContent = calendarSection.classList.contains('hidden') ? '▶' : '◀';
+        toggleBtn.title = calendarSection.classList.contains('hidden') ? 'Show calendar' : 'Hide calendar';
+
+        // Trigger map resize after animation completes
+        setTimeout(() => {
+            if (map) {
+                google.maps.event.trigger(map, 'resize');
             }
-
-            // Apply filter to markers
-            applyMarkerFilter();
-        });
-    });
-}
-
-/**
- * Apply active filters to venue markers
- */
-function applyMarkerFilter() {
-    venueMarkers.forEach(item => {
-        const showMarker = activeFilters.has('all') || activeFilters.has(item.data.type);
-        item.marker.setVisible(showMarker);
+        }, 300);
     });
 }
 
@@ -253,51 +263,25 @@ function applyMarkerFilter() {
  */
 function setupPostcodeSearch() {
     const input = document.getElementById('postcode-search');
+    if (!input) {
+        console.warn('Postcode search input not found');
+        return;
+    }
+
     input.addEventListener('keypress', async (e) => {
         if (e.key === 'Enter') {
             const postcode = input.value.trim().toUpperCase();
             if (postcode) {
-                await searchByPostcode(postcode);
+                try {
+                    const result = await searchByPostcode(postcode);
+                    // Zoom to postcode location
+                    map.setCenter({ lat: result.lat, lng: result.lng });
+                    map.setZoom(14);
+                    console.log(`Found postcode: ${result.districtName}`);
+                } catch (error) {
+                    alert(`Error: ${error.message}`);
+                }
             }
         }
     });
-}
-
-/**
- * Search and zoom to a postcode
- * Uses postcodes.io API (free, no key required)
- */
-async function searchByPostcode(postcode) {
-    // Validate postcode format (UK postcode pattern)
-    const postcodeRegex = /^[a-z]{1,2}[0-9]{1,2}[a-z]?\s?[0-9][a-z]{2}$/i;
-    if (!postcodeRegex.test(postcode)) {
-        alert('Invalid UK postcode format (e.g., AL10 0LA)');
-        return;
-    }
-
-    try {
-        const response = await fetch(`https://api.postcodes.io/postcodes/${encodeURIComponent(postcode)}`);
-        const data = await response.json();
-
-        if (!data.result) {
-            alert('Postcode not found');
-            return;
-        }
-
-        const gssDistrict = data.result.codes.admin_district;
-        const lat = data.result.latitude;
-        const lng = data.result.longitude;
-
-        // Zoom to postcode location
-        map.setCenter({ lat, lng });
-        map.setZoom(14);
-
-        // Show venues for this district
-        const venuesInDistrict = allVenues.filter(v => v.gss_district === gssDistrict);
-        console.log(`Found ${venuesInDistrict.length} venues in ${gssDistrict}`);
-        // TODO: highlight venues in this district
-    } catch (error) {
-        console.error('Error searching postcode:', error);
-        alert('Error: Could not search postcode. Check the postcode format (e.g., AL10 0LA)');
-    }
 }

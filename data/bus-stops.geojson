@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-001",
+        "name": "High Street",
+        "ref": "HS001",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.22, 51.72]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-002",
+        "name": "Town Centre",
+        "ref": "TC002",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.20, 51.73]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-003",
+        "name": "Park Lane",
+        "ref": "PL003",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.18, 51.74]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-004",
+        "name": "Station Road",
+        "ref": "SR004",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.20, 51.90]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-005",
+        "name": "Market Square",
+        "ref": "MS005",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.28, 51.96]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-006",
+        "name": "Church Street",
+        "ref": "CS006",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.25, 51.92]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-007",
+        "name": "Main Road",
+        "ref": "MR007",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.30, 51.88]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-008",
+        "name": "Bus Station",
+        "ref": "BS008",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.35, 51.85]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-009",
+        "name": "Shopping Centre",
+        "ref": "SC009",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.40, 51.80]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bus-stop-010",
+        "name": "Hospital",
+        "ref": "HP010",
+        "type": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.50, 51.75]
+      }
+    }
+  ]
+}
