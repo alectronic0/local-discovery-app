@@ -400,6 +400,16 @@ html, body {
     color: var(--slate-700);
 }
 
+.unit-floor-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    background: var(--slate-200);
+    color: var(--slate-700);
+    white-space: nowrap;
+}
+
 .badge-vacant-status {
     background: var(--vacant-red);
     color: white;

@@ -167,9 +167,12 @@ const WGCMap = {
                 : "";
 
             marker.bindPopup(`
-                <div style="font-family: var(--font-sans); min-width: 200px;">
-                    <div style="font-size: 0.7rem; font-weight: 700; color: ${isVacant ? '#d90429' : '#2d6a4f'}; text-transform: uppercase;">
-                        ${isVacant ? '🔴 VACANT LOT' : style.label}
+                <div style="font-family: var(--font-sans); min-width: 220px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-size: 0.7rem; font-weight: 700; color: ${isVacant ? '#d90429' : '#2d6a4f'}; text-transform: uppercase;">
+                            ${isVacant ? '🔴 VACANT LOT' : style.label}
+                        </span>
+                        ${u.floor_name ? `<span style="font-size: 0.65rem; background: #e2e8f0; color: #334155; padding: 2px 6px; border-radius: 3px; font-weight: 700;">${u.floor_name}</span>` : ''}
                     </div>
                     <h3 style="font-size: 1rem; margin: 0.2rem 0; font-weight: 700;">${u.name}</h3>
                     <div style="font-size: 0.8rem; color: #64748b; margin-bottom: 0.35rem;">📍 ${u.street}</div>
@@ -191,9 +194,12 @@ const WGCMap = {
                 card.innerHTML = `
                     <div class="unit-card-header">
                         <span class="unit-card-title">${u.name}</span>
-                        <span class="unit-category-badge ${isVacant ? 'badge-vacant-status' : ''}">
-                            ${isVacant ? 'Vacant' : style.label}
-                        </span>
+                        <div style="display: flex; gap: 0.3rem; align-items: center;">
+                            <span class="unit-category-badge ${isVacant ? 'badge-vacant-status' : ''}">
+                                ${isVacant ? 'Vacant' : style.label}
+                            </span>
+                            ${u.floor_name ? `<span class="unit-floor-badge">${u.floor_name}</span>` : ''}
+                        </div>
                     </div>
                     <div class="unit-street">📍 ${u.street}</div>
                     ${isVacant ? `
