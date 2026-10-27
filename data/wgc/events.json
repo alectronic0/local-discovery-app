@@ -1,0 +1,82 @@
+[
+  {
+    "id": "evt-fire-lego-walk",
+    "title": "Charity Fire & Lego Walk for Willow Foundation",
+    "date": "2026-10-27",
+    "time": "18:00 - 21:00",
+    "location": "Welwyn Garden City Town Centre",
+    "category": "Charity & Community",
+    "organizer": "Willow Foundation",
+    "description": "Brave the glowing coals or Lego brick walk to raise funds for seriously ill young adults. Live spectators welcome in the centre."
+  },
+  {
+    "id": "evt-whbc-cabinet",
+    "title": "Welwyn Hatfield Cabinet Meeting",
+    "date": "2026-11-03",
+    "time": "19:30",
+    "location": "Council Chamber, The Campus, WGC",
+    "category": "Civic & Governance",
+    "organizer": "WHBC",
+    "description": "Council cabinet session reviewing local infrastructure and budget allocations."
+  },
+  {
+    "id": "evt-applecroft-fireworks",
+    "title": "Applecroft PTA Fireworks Spectacular",
+    "date": "2026-11-06",
+    "time": "18:30 (Gates 17:30)",
+    "location": "Applecroft School Grounds, Applecroft Road, AL8 6JZ",
+    "category": "Family & Festival",
+    "organizer": "Applecroft PTA",
+    "description": "Annual community fireworks display with BBQ, hot mulled drinks, glow stalls and musical soundtrack."
+  },
+  {
+    "id": "evt-tewin-fireworks",
+    "title": "Annual Tewin Cowper Community Fireworks",
+    "date": "2026-11-07",
+    "time": "18:00",
+    "location": "Tewin Playing Fields, AL6 0JX",
+    "category": "Family & Festival",
+    "organizer": "Tewin Community Association",
+    "description": "Traditional village fireworks night just 5 minutes outside Welwyn Garden City."
+  },
+  {
+    "id": "evt-peartree-patientvoices",
+    "title": "Peartree PatientVoices Monthly Meeting",
+    "date": "2026-11-12",
+    "time": "18:30 - 20:00",
+    "location": "Peartree Lane Surgery, AL7 3UJ",
+    "category": "Health & Community",
+    "organizer": "Peartree Medical Practice",
+    "description": "Community patient advocacy group addressing appointment availability, digital triaging and neighbourhood care."
+  },
+  {
+    "id": "evt-xmas-lights-2026",
+    "title": "WGC Christmas Lights Switch-On & Festive Trail",
+    "date": "2026-11-21",
+    "time": "12:00 - 18:30 (Lights switch-on 17:30)",
+    "location": "Howardsgate & Stonehills, WGC Town Centre",
+    "category": "Town Festival",
+    "organizer": "Wonderful WGC BID",
+    "description": "The landmark holiday event! Street food market, Santa's grotto, live music stages, lantern parade and lighting of the town centre."
+  },
+  {
+    "id": "evt-planning-panel",
+    "title": "Cabinet Planning and Parking Panel",
+    "date": "2026-11-24",
+    "time": "19:30",
+    "location": "Council Chamber, The Campus, WGC",
+    "category": "Civic & Governance",
+    "organizer": "WHBC",
+    "description": "Consultation on town centre parking tariffs, EV charging expansion, and town masterplan updates."
+  },
+  {
+    "id": "evt-food-festival-apps",
+    "title": "WGC World Food Festival 2027 Trader Submissions",
+    "date": "2026-12-01",
+    "time": "Ongoing deadline",
+    "location": "WGC BID Online Portal",
+    "category": "Food & Business",
+    "organizer": "Wonderful WGC BID",
+    "description": "Applications open for international food vendors and artisan traders for next summer's flagship food festival."
+  }
+]

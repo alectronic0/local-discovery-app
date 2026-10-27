@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveWGC V2 — Welwyn Garden City Town Centre & Living Directory</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="wgc.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="wgc-navbar">
+        <div class="brand">
+            <span class="brand-icon">🌳</span>
+            <div class="brand-text">
+                <h1>LoveWGC <span class="badge-v2">V2</span></h1>
+                <p class="subtitle">Welwyn Garden City Town Centre Discovery, Vacancy & Community Radar</p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="lovewgc.html" class="nav-item active">🌳 LoveWGC V2</a>
+            <a href="index.html" class="nav-item">🗺️ LoveUK Map</a>
+            <a href="structure.html" class="nav-item">🏛️ Area Structure</a>
+        </nav>
+    </header>
+
+    <!-- Live KPI Metric Strip -->
+    <section class="kpi-strip" id="kpi-strip">
+        <div class="kpi-item">
+            <span class="kpi-label">Tracked Units</span>
+            <span class="kpi-value" id="kpi-total-units">--</span>
+        </div>
+        <div class="kpi-item kpi-warning">
+            <span class="kpi-label">Vacant Lots</span>
+            <span class="kpi-value" id="kpi-vacant-units">--</span>
+        </div>
+        <div class="kpi-item">
+            <span class="kpi-label">Vacancy Rate</span>
+            <span class="kpi-value" id="kpi-vacancy-rate">--%</span>
+        </div>
+        <div class="kpi-item">
+            <span class="kpi-label">Avg Asking Rent</span>
+            <span class="kpi-value" id="kpi-avg-rent">--</span>
+        </div>
+        <div class="kpi-item">
+            <span class="kpi-label">Available Space</span>
+            <span class="kpi-value" id="kpi-sqft">-- sq ft</span>
+        </div>
+        <div class="kpi-item kpi-highlight">
+            <span class="kpi-label">Upcoming Activities</span>
+            <span class="kpi-value" id="kpi-events">--</span>
+        </div>
+        <div class="kpi-item kpi-highlight">
+            <span class="kpi-label">Community Proposals</span>
+            <span class="kpi-value" id="kpi-proposals">--</span>
+        </div>
+    </section>
+
+    <!-- Main Navigation Tabs -->
+    <div class="wgc-tabs">
+        <button class="tab-btn active" data-tab="map-view">🗺️ Town Map & Store Directory</button>
+        <button class="tab-btn" data-tab="analytics-view">📊 Town Makeup & Missing Gaps</button>
+        <button class="tab-btn" data-tab="events-view">📅 Upcoming Activities & Intel (<span id="tab-event-count">0</span>)</button>
+        <button class="tab-btn" data-tab="voting-view">🗳️ Community Wishlist & Voting (<span id="tab-vote-count">0</span>)</button>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="wgc-main">
+        <!-- TAB 1: TOWN MAP & STORE DIRECTORY -->
+        <section id="map-view" class="tab-pane active">
+            <!-- Filter Bar -->
+            <div class="filter-toolbar">
+                <div class="filter-group category-filters">
+                    <span class="filter-title">Filter by Category:</span>
+                    <button class="filter-chip active" data-filter="all">All Units</button>
+                    <button class="filter-chip chip-vacant" data-filter="vacant">🔴 Vacant Only</button>
+                    <button class="filter-chip" data-filter="coffee_bakery">☕ Coffee & Bakeries</button>
+                    <button class="filter-chip" data-filter="barber_salon">✂️ Barbers & Salons</button>
+                    <button class="filter-chip" data-filter="charity_shop">🎁 Charity Shops</button>
+                    <button class="filter-chip" data-filter="restaurant_food">🍽️ Restaurants & Pubs</button>
+                    <button class="filter-chip" data-filter="retail">🛍️ Retail & Fashion</button>
+                    <button class="filter-chip" data-filter="services">🏦 Banks & Health</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="unit-search" placeholder="Search store name, street, or unit number..." />
+                </div>
+            </div>
+
+            <!-- Map & Sidebar Split Layout -->
+            <div class="map-layout">
+                <div id="wgc-leaflet-map" class="map-canvas"></div>
+
+                <!-- Unit Detail & Directory Drawer -->
+                <aside class="unit-drawer" id="unit-drawer">
+                    <div class="drawer-header">
+                        <h2 id="drawer-title">Welwyn Garden City Directory</h2>
+                        <span class="drawer-count" id="visible-unit-count">46 units</span>
+                    </div>
+                    <div class="unit-list" id="unit-list">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- TAB 2: TOWN MAKEUP & GAP ANALYSIS -->
+        <section id="analytics-view" class="tab-pane">
+            <div class="analytics-container">
+                <div class="section-intro">
+                    <h2>Town Centre Balance & Deficit Scorecard</h2>
+                    <p>Analysis of Welwyn Garden City commercial unit distribution, identifying retail clusters, oversaturated categories, and high-priority missing amenities.</p>
+                </div>
+
+                <!-- Scorecard Summary Cards -->
+                <div class="scorecard-grid">
+                    <div class="scorecard-box box-oversaturated">
+                        <h3>⚠️ High Density & Oversaturated Categories</h3>
+                        <p class="box-desc">Sectors where the current concentration of units dominates town retail frontages.</p>
+                        <div id="oversaturated-list" class="gap-items">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <div class="scorecard-box box-missing">
+                        <h3>🎯 What Our Town Is Missing (Priority Gaps)</h3>
+                        <p class="box-desc">Critical cultural, retail, and social deficits identified by community survey and rail commuting patterns.</p>
+                        <div id="missing-list" class="gap-items">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category Breakdown Distribution Table -->
+                <div class="distribution-card">
+                    <h3>Commercial Category Breakdown</h3>
+                    <div class="distribution-bars" id="distribution-bars">
+                        <!-- Injected by JS -->
+                    </div>
+                    <table class="distribution-table" id="distribution-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Unit Count</th>
+                                <th>Share of Town Centre</th>
+                                <th>Status Assessment</th>
+                            </tr>
+                        </thead>
+                        <tbody id="distribution-tbody">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: UPCOMING ACTIVITIES & HERTFORDSHIRE INTEL -->
+        <section id="events-view" class="tab-pane">
+            <div class="events-container">
+                <div class="section-intro">
+                    <h2>Upcoming Hertfordshire & WGC Activities</h2>
+                    <p>Aggregated from local intelligence pipelines (Wonderful WGC BID, Hertfordshire County Council, and local community grapevines).</p>
+                </div>
+                <div class="events-grid" id="events-grid">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: COMMUNITY WISHLIST & VOTING -->
+        <section id="voting-view" class="tab-pane">
+            <div class="voting-container">
+                <div class="section-intro">
+                    <h2>What Does Welwyn Garden City Need?</h2>
+                    <p>Cast your vote on community proposals for vacant lots and town centre initiatives, or submit your own ideas to build evidence for council and BID discussions.</p>
+                </div>
+
+                <div class="voting-actions-bar">
+                    <button class="btn-primary" id="open-propose-modal-btn">➕ Propose a New Store or Initiative</button>
+                    <button class="btn-secondary" id="export-votes-btn">📥 Export Community Votes (JSON)</button>
+                    <button class="btn-text" id="reset-votes-btn">Reset My Local Votes</button>
+                </div>
+
+                <!-- Wishlist Cards -->
+                <div class="wishlist-grid" id="wishlist-grid">
+                    <!-- Injected by JS -->
+                </div>
+
+                <!-- Propose Modal -->
+                <div class="modal-overlay hidden" id="propose-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Propose a Town Centre Addition</h3>
+                            <button class="modal-close" id="close-modal-btn">&times;</button>
+                        </div>
+                        <form id="propose-form">
+                            <div class="form-group">
+                                <label for="prop-title">What should open or change in WGC? *</label>
+                                <input type="text" id="prop-title" required placeholder="e.g. Independent Craft Beer & Board Game Lounge" />
+                            </div>
+                            <div class="form-group">
+                                <label for="prop-category">Category *</label>
+                                <select id="prop-category" required>
+                                    <option value="Food & Drink">Food & Drink</option>
+                                    <option value="Retail & Culture">Retail & Culture</option>
+                                    <option value="Leisure & Social">Leisure & Social</option>
+                                    <option value="Opening Hours & Town Vitality">Opening Hours & Town Vitality</option>
+                                    <option value="Sports & Youth">Sports & Youth</option>
+                                    <option value="Sustainable Living">Sustainable Living</option>
+                                    <option value="Public Realm & Transport">Public Realm & Transport</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="prop-location">Suggested Location / Target Area</label>
+                                <input type="text" id="prop-location" placeholder="e.g. Howard Centre Unit 38, Stonehills Square, Fretherne Rd" />
+                            </div>
+                            <div class="form-group">
+                                <label for="prop-desc">Description & Why It Matters *</label>
+                                <textarea id="prop-desc" rows="3" required placeholder="Explain how this benefits residents, commuters, or families..."></textarea>
+                            </div>
+                            <div class="modal-buttons">
+                                <button type="button" class="btn-secondary" id="cancel-modal-btn">Cancel</button>
+                                <button type="submit" class="btn-primary">Submit Proposal</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Application Logic Modules -->
+    <script src="js/wgc-analytics.js"></script>
+    <script src="js/wgc-events.js"></script>
+    <script src="js/wgc-voting.js"></script>
+    <script src="js/wgc-map.js"></script>
+    <script src="js/wgc-app.js"></script>
+</body>
+</html>

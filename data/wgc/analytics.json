@@ -1,0 +1,154 @@
+{
+  "summary": {
+    "total_units": 46,
+    "occupied_units": 37,
+    "vacant_units": 9,
+    "vacancy_rate_pct": 19.6,
+    "total_tracked_sq_ft": 196906,
+    "average_asking_rent_pa": 36278,
+    "total_available_rent_potential_pa": 326500
+  },
+  "distribution": [
+    {
+      "category": "vacant",
+      "label": "Vacant / Empty Commercial Lots",
+      "count": 9,
+      "percentage": 19.6
+    },
+    {
+      "category": "coffee_bakery",
+      "label": "Coffee Shops & Bakeries",
+      "count": 6,
+      "percentage": 13.0
+    },
+    {
+      "category": "restaurant_food",
+      "label": "Restaurants & Casual Dining",
+      "count": 6,
+      "percentage": 13.0
+    },
+    {
+      "category": "barber_salon",
+      "label": "Barbers, Salons & Hair",
+      "count": 6,
+      "percentage": 13.0
+    },
+    {
+      "category": "charity_shop",
+      "label": "Charity Shops",
+      "count": 6,
+      "percentage": 13.0
+    },
+    {
+      "category": "services_bank",
+      "label": "Banks & Financial Services",
+      "count": 3,
+      "percentage": 6.5
+    },
+    {
+      "category": "health_pharmacy",
+      "label": "Pharmacies, Opticians & Health",
+      "count": 2,
+      "percentage": 4.3
+    },
+    {
+      "category": "retail_clothing",
+      "label": "Fashion & Clothing Retail",
+      "count": 2,
+      "percentage": 4.3
+    },
+    {
+      "category": "retail_lifestyle",
+      "label": "Lifestyle, Homeware & Gifts",
+      "count": 1,
+      "percentage": 2.2
+    },
+    {
+      "category": "leisure_fitness",
+      "label": "Gyms & Active Fitness",
+      "count": 1,
+      "percentage": 2.2
+    },
+    {
+      "category": "department_store",
+      "label": "Department Stores",
+      "count": 1,
+      "percentage": 2.2
+    },
+    {
+      "category": "retail_discount",
+      "label": "Discount & Variety Retail",
+      "count": 1,
+      "percentage": 2.2
+    },
+    {
+      "category": "leisure_culture",
+      "label": "Cinema, Leisure & Culture",
+      "count": 1,
+      "percentage": 2.2
+    },
+    {
+      "category": "civic_community",
+      "label": "Public Libraries & Civic Hubs",
+      "count": 1,
+      "percentage": 2.2
+    }
+  ],
+  "gaps_scorecard": {
+    "oversaturated": [
+      {
+        "category": "Barbers & Hairdressers",
+        "count": 6,
+        "share": "13%",
+        "verdict": "High Density",
+        "note": "6+ barbers/salons in under 500m radius. Market is heavily serviced."
+      },
+      {
+        "category": "Charity Shops",
+        "count": 6,
+        "share": "13%",
+        "verdict": "Clustered",
+        "note": "Concentrated almost exclusively on Stonehills (6 stores within 150m)."
+      },
+      {
+        "category": "High-Street Coffee Chains",
+        "count": 6,
+        "share": "13%",
+        "verdict": "Dominated by Chains",
+        "note": "Starbucks, Costa, Greggs, Wenzel's present; distinct gap for craft third-wave coffee."
+      }
+    ],
+    "missing_deficits": [
+      {
+        "amenity": "Independent Bookshop",
+        "current_count": 0,
+        "community_demand": "Very High (#2 Voted)",
+        "recommended_action": "Incentivize bookseller tenant into Howard Centre Unit 38 or 10."
+      },
+      {
+        "amenity": "Evening Commuter Retail & Social (Post 5:30 PM)",
+        "current_count": 0,
+        "community_demand": "Top Priority (#1 Voted)",
+        "recommended_action": "Pilot Thursday late opening trial with Ardent & BID."
+      },
+      {
+        "amenity": "Artisan Sourdough Bakery / Delicatessen",
+        "current_count": 0,
+        "community_demand": "High (#3 Voted)",
+        "recommended_action": "Target boutique baker for Fretherne Rd vacant unit."
+      },
+      {
+        "amenity": "Specialty Board Game / Youth Social Lounge",
+        "current_count": 0,
+        "community_demand": "High (#4 Voted)",
+        "recommended_action": "Activate upper mall vacant space with low-rent leisure concession."
+      },
+      {
+        "amenity": "Zero-Waste Bulk Refill Grocer",
+        "current_count": 0,
+        "community_demand": "Moderate",
+        "recommended_action": "Eco-retailer pop-up in Stonehills vacant lot."
+      }
+    ]
+  }
+}

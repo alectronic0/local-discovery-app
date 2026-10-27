@@ -1,0 +1,79 @@
+[
+  {
+    "id": "wish-commuter-late",
+    "title": "Commuter Late Shopping Night (Thursdays to 8:00 PM)",
+    "category": "Town Vitality & Hours",
+    "target_area": "Howard Centre & Howardsgate",
+    "votes": 312,
+    "description": "Most WGC retail shuts at 5:30 PM, locking out the thousands of commuters stepping off trains from King's Cross and Moorgate. Trial Thursday evening opening across major stores and cafes.",
+    "benefits": "Captures London commuter spend in Welwyn, activates the evening economy safely, and supports local food businesses.",
+    "feasibility": "High \u2014 requires Howard Centre management and BID coordination.",
+    "status": "Active Campaign"
+  },
+  {
+    "id": "wish-indie-bookshop",
+    "title": "Independent Bookshop & Reading Parlour",
+    "category": "Retail & Culture",
+    "target_area": "Howard Centre (Unit 38 or Stonehills)",
+    "votes": 248,
+    "description": "Welwyn Garden City has no dedicated independent bookshop since chain closures. A warm space combining curated fiction, poetry, children's story times, and specialty drip coffee.",
+    "benefits": "Fills a major cultural hole in town, creates an intergenerational dwell-space, and celebrates the Garden City literary heritage.",
+    "feasibility": "Medium \u2014 ideal tenant for vacant Howard Centre Unit 38 (1,084 sq ft).",
+    "status": "Community Idea"
+  },
+  {
+    "id": "wish-artisan-bakery",
+    "title": "Independent Sourdough Bakery & Deli",
+    "category": "Food & Drink",
+    "target_area": "Fretherne Road or Howardsgate",
+    "votes": 195,
+    "description": "While GAIL's and Wenzel's exist, the town lacks a truly independent local baker crafting long-ferment sourdough loaves, artisanal focaccia, and locally churned dairy.",
+    "benefits": "Supports regional food producers, draws morning footfall, and diversifies town dining.",
+    "feasibility": "High \u2014 several vacant units on Fretherne Rd fit a small craft kitchen.",
+    "status": "Community Idea"
+  },
+  {
+    "id": "wish-boardgame-lounge",
+    "title": "Specialty Board Game Caf\u00e9 & Evening Taproom",
+    "category": "Leisure & Social",
+    "target_area": "Stonehills or First Floor Mall",
+    "votes": 164,
+    "description": "A welcoming, alcohol-sensible evening hub with a huge board game library, craft beers, bubble teas, and private table bookings for groups and solo joiners.",
+    "benefits": "Provides an alcohol-optional evening activity for young adults and families without needing to travel to London or St Albans.",
+    "feasibility": "High \u2014 strong local gaming community already active in WGC.",
+    "status": "Community Idea"
+  },
+  {
+    "id": "wish-indoor-climbing",
+    "title": "Indoor Bouldering & Movement Gym",
+    "category": "Sports & Youth",
+    "target_area": "Broadwater Road / Shredded Wheat Site",
+    "votes": 128,
+    "description": "A modern indoor bouldering wall, campus boards, and movement fitness facility for teens and adults.",
+    "benefits": "Provides high-energy active sports for teenagers who currently have limited indoor leisure outside Campus West skating.",
+    "feasibility": "Medium \u2014 requires high-ceiling warehouse or multi-level space.",
+    "status": "Feasibility Study"
+  },
+  {
+    "id": "wish-zero-waste",
+    "title": "Zero-Waste Refill Pantry & Organic Grocer",
+    "category": "Sustainable Living",
+    "target_area": "Stonehills Square",
+    "votes": 115,
+    "description": "Bring-your-own-jar bulk grains, nuts, pulses, oils, household eco-detergents, and plastic-free seasonal produce.",
+    "benefits": "Aligns with Ebenezer Howard's original Garden City eco-sustainability vision; eliminates single-use plastics.",
+    "feasibility": "High \u2014 low capital shop fit suited for a 600\u2013900 sq ft retail unit.",
+    "status": "Community Idea"
+  },
+  {
+    "id": "wish-pedestrian-evenings",
+    "title": "Pedestrianize Howardsgate for Weekend Al-Fresco Dining",
+    "category": "Public Realm & Transport",
+    "target_area": "Howardsgate",
+    "votes": 204,
+    "description": "Close Howardsgate to vehicle traffic on Friday and Saturday evenings during spring and summer to allow expanded restaurant terrace seating, acoustic musicians, and European-style outdoor socialising.",
+    "benefits": "Transforms town centre atmosphere into a vibrant, safe destination.",
+    "feasibility": "Medium \u2014 requires WHBC highways and bus rerouting permissions.",
+    "status": "Council Discussion"
+  }
+]
