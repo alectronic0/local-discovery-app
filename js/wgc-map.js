@@ -33,11 +33,10 @@ const WGCMap = {
             maxZoom: 19
         });
 
-        // Crisp, fluid CartoDB Voyager raster tiles
-        L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: "abcd",
-            maxZoom: 20
+        // Reliable key-free OpenStreetMap tile layer (zero API key required)
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
         }).addTo(this.map);
 
         // Fix leaflet size on tab changes

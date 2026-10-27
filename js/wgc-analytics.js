@@ -37,7 +37,38 @@ const WGCAnalytics = {
             `).join("");
         }
 
-        // 3. Render Distribution Table
+        // 3. Render Distribution Bar Chart
+        const barContainer = document.getElementById("distribution-bars");
+        if (barContainer && distribution) {
+            const catColors = {
+                "vacant": "var(--vacant-red)",
+                "barber_salon": "#7b2cbf",
+                "charity_shop": "#d97706",
+                "coffee_bakery": "#b0572b",
+                "restaurant_food": "#16a34a",
+                "retail_clothing": "#2563eb",
+                "retail_lifestyle": "#3b82f6",
+                "retail_discount": "#60a5fa",
+                "services_bank": "#0891b2",
+                "health_pharmacy": "#06b6d4",
+                "leisure_culture": "#4f46e5",
+                "leisure_fitness": "#6366f1",
+                "department_store": "#1d4ed8",
+                "civic_community": "#059669"
+            };
+
+            barContainer.innerHTML = distribution.map(d => {
+                const color = catColors[d.category] || "var(--slate-500)";
+                return `
+                    <div class="dist-segment" 
+                         style="width: ${d.percentage}%; background-color: ${color};" 
+                         title="${d.label}: ${d.count} units (${d.percentage}%)">
+                    </div>
+                `;
+            }).join("");
+        }
+
+        // 4. Render Distribution Table
         const tbody = document.getElementById("distribution-tbody");
         if (tbody && distribution) {
             tbody.innerHTML = distribution.map(d => {

@@ -605,6 +605,29 @@ html, body {
     margin-bottom: 0.75rem;
 }
 
+.distribution-bars {
+    display: flex;
+    width: 100%;
+    height: 24px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--slate-200);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    margin: 0.75rem 0 1.25rem 0;
+}
+
+.dist-segment {
+    height: 100%;
+    transition: all 0.2s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.dist-segment:hover {
+    opacity: 0.85;
+    filter: brightness(1.1);
+}
+
 .distribution-table {
     width: 100%;
     border-collapse: collapse;
